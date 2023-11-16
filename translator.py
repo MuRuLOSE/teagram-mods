@@ -37,7 +37,10 @@ class TranslatorMod(loader.Module):
                     dest=dest
                 )
 
-                await utils.answer(message,translated_text.text)
+                await utils.answer(
+                    message,
+                    f"Translated:\n{translated_text.text}"
+                )
         else:
             try:
                 args[0]
@@ -52,5 +55,8 @@ class TranslatorMod(loader.Module):
                 dest=dest
             )
 
-            await utils.answer(message,translated_text.text)
+            await utils.answer(
+                message,
+                f"Translated:\n{translated_text.text}"
+            )
 
