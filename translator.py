@@ -21,7 +21,7 @@ def all_langs() -> str:
 
     return asd
 
-@loader.module(name="Translator", author="teagram_mods", version=1) 
+@loader.module(name="Translator", author="@teagram_mods", version=1) 
 class TranslatorMod(loader.Module):                          
     """Translate text"""
 
