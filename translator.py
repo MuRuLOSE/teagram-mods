@@ -31,7 +31,7 @@ class TranslatorMod(loader.Module):
             else:
                 dest = args[0]
             if reply:
-                text = reply.text
+                text = reply.raw_text
                 translated_text = translator.translate(
                     text=text, 
                     dest=dest
